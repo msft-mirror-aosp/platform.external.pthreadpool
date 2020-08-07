@@ -9,11 +9,11 @@ third_party {
     type: GIT
     value: "https://github.com/Maratyszcza/pthreadpool"
   }
-  version: "9b2c0caf7d9843f25709178b0cd7030892a1ff88"
+  version: "029c88620802e1361ccf41d1970bd5b07fd6b7bb"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 5
-    day: 1
+    month: 7
+    day: 10
   }
 }
