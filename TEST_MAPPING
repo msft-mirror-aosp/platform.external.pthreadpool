@@ -3,10 +3,5 @@
     {
       "name": "PthreadPoolTests"
     }
-  ],
-  "hwasan-postsubmit": [
-    {
-      "name": "PthreadPoolTests"
-    }
   ]
 }
