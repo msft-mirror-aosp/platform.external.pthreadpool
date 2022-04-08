@@ -4,12 +4,21 @@
 /* Dependencies */
 #include <fxdiv.h>
 
-/* Public library header */
+/* Library header */
 #include <pthreadpool.h>
 
-/* Internal library headers */
-#include "threadpool-utils.h"
 
+static inline size_t divide_round_up(size_t dividend, size_t divisor) {
+	if (dividend % divisor == 0) {
+		return dividend / divisor;
+	} else {
+		return dividend / divisor + 1;
+	}
+}
+
+static inline size_t min(size_t a, size_t b) {
+	return a < b ? a : b;
+}
 
 void pthreadpool_compute_1d(
 	pthreadpool_t threadpool,
