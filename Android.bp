@@ -43,6 +43,7 @@ cc_library_static {
         "-O2",
         "-Wno-deprecated-declarations",
         "-Wno-missing-field-initializers",
+        "-Wno-unused-parameter",
         "-DPTHREADPOOL_USE_CPUINFO=1",
         "-DPTHREADPOOL_USE_CONDVAR=1",
     ],
