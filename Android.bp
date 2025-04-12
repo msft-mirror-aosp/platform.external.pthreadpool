@@ -57,6 +57,10 @@ cc_library_static {
         "libcpuinfo",
         "libclog",
     ],
+    visibility: [
+        "//external/XNNPACK",
+        "//packages/modules/NeuralNetworks/driver/sample_hidl",
+    ],
 }
 
 cc_test {
